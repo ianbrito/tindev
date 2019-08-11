@@ -57,5 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+ios/
+android/
+
 # next.js build output
 .next
