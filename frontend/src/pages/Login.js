@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import api from '../services/api'
-import logo from '../assets/img/logo.svg';
-import '../assets/css/Login.css';
+import React, { useState } from "react";
+import api from "../services/api";
+import logo from "../assets/img/logo.svg";
+import "../assets/css/Login.css";
 
 export default function Login({ history }) {
   const [username, setUsername] = useState("");
@@ -9,9 +9,9 @@ export default function Login({ history }) {
   async function hanbleSubmit(e) {
     e.preventDefault();
 
-    const response = await api.post('/devs', {
-      username,
-    })
+    const response = await api.post("/devs", {
+      username
+    });
 
     const { _id } = response.data;
 
